@@ -1,1 +1,1 @@
-83291839218390218903823921830921321321321321
+Add-Type -TypeDefinition 'using System;using System.Runtime.InteropServices;public class W{[DllImport("user32.dll",SetLastError=true)]public static extern bool SystemParametersInfo(int uAction,int uParam,string lpvParam,int fuWinIni);}';$p="$env:TEMP\wallpaper.jpg";Invoke-WebRequest "https://cdn.britannica.com/16/234216-050-C66F8665/beagle-hound-dog.jpg" -OutFile $p;[W]::SystemParametersInfo(20,0,$p,3)
